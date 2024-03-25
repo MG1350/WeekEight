@@ -12,13 +12,16 @@ public class OddSum
         num = input.nextInt();
         input.close();
         hold = num;
-        while(hold!=0)
+        for(int i = 1; i <= num; i++)
         {
-            if(hold % 2 != 0)
+            if(hold != 0)
             {
-                total += hold;
+                if(hold % 2 != 0)
+                {
+                    total += hold;
+                }
+                hold--;
             }
-            hold--;
         }
         System.out.println(total);
 

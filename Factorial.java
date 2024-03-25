@@ -12,10 +12,13 @@ public class Factorial
         input.close();
         hold = num;
         System.out.print(num + "! = " + num);
-        while(hold!=1)
+        for(int i = 1; i <= num; i++)
         {
-            hold--;
-            System.out.print("*"+hold);
+            if(hold != 1)
+            {
+                hold--;
+                System.out.print("*"+hold);
+            }
         }
 
     }
